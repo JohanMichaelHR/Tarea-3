@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Tienda en Línea</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Testimonios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Carrito (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Bienvenidos a la mejor tienda en línea</h2>
+            <p>Descubre nuestros productos exclusivos</p>
+            <button onclick="scrollToSection('products')">Ver Productos</button>
+        </section>
+
+        <section class="products" id="products">
+            <h2>Productos Destacados</h2>
+            <div class="product-list">
+                <!-- Productos se agregarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una tienda en línea comprometida con ofrecer los mejores productos a nuestros clientes. Nuestra misión es proporcionar calidad y satisfacción en cada compra.</p>
+            <p>Contamos con una amplia variedad de productos que se ajustan a todas tus necesidades. Nuestro equipo está siempre listo para ayudarte y asegurarse de que tengas la mejor experiencia de compra posible.</p>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <h2>Testimonios</h2>
+            <div class="testimonial-list">
+                <div class="testimonial">
+                    <p>"Excelente tienda, productos de alta calidad y servicio al cliente impecable!" - Juan Pérez</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Me encanta comprar aquí, siempre encuentro lo que necesito." - María López</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Entrega rápida y productos tal como se describen. Muy recomendable!" - Carlos García</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter" id="newsletter">
+            <h2>Suscríbete a Nuestro Boletín</h2>
+            <p>Mantente al día con nuestras últimas ofertas y novedades.</p>
+            <form>
+                <input type="email" placeholder="Ingresa tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p>&copy; 2024 Tienda en Línea. Todos los derechos reservados.</p>
+            <p>Contacto: contacto@tiendaenlinea.com</p>
+            <p>Síguenos en redes sociales: 
+                <a href="#">Facebook</a> | 
+                <a href="#">Twitter</a> | 
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
